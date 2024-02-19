@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Gustaco Manquepillán">
+    <meta name="author" content="Gustavo Manquepillán">
     <meta name="description" content="Catalogos de viajes Chile">
     <meta name="keywords" content="Turismo, Viaje">
     <title>Viajes Chile</title>
+
     <link rel="icon" type="image/x-icon" href="assets/img/viajes.svg">
 
     <!-- Bootstrap 5.3.2-->
@@ -32,13 +33,13 @@
 
 <body class="bg-black">
     <!--Navbar-->
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-info px-md-5 bg-transparent">
-        <div class="container-fluid px-md-5">
-            <a class="navbar-brand nav-brand-text text-light ps-md-5" href="#">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-info px-5 bg-transparent fixed-top">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand nav-brand-text text-light ps-5 fs-3" href="#">
                 <img src="assets/img/viajes.svg" alt="Logo" width="30" height="24" class="d-inline-block">
                 Viajes Chile
             </a>
-            <div class="collapse navbar-collapse ps-3 pe-md-5" id="navbarNav">
+            <div class="collapse navbar-collapse ps-5 pe-5" id="navbarNav">
                 <div class="navbar-nav ms-auto">
                     <a class="nav-link text-light" id="test" href="#inicio">Inicio</a>
                     <a class="nav-link text-light" href="#quienes_somos">Quiénes Somos</a>
@@ -50,10 +51,10 @@
     </nav>
 
     <header class="container-fluid bg-black" id="inicio">
-        <!--Carrousel-->
+        <!--Carrousel slide-->
         <div class="row">
-            <div class="col px-0">
-                <div id="headerCarousel" class="carousel slide">
+            <div class="col">
+                <div id="Carousel" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Alpacas">
@@ -65,12 +66,12 @@
                             <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="Pinguinos">
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel"
+                    <button class="carousel-control-prev" type="button" data-bs-target="#Carousel"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Anterior</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#headerCarousel"
+                    <button class="carousel-control-next" type="button" data-bs-target="#Carousel"
                         data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Siguiente</span>
@@ -123,89 +124,27 @@
         </div>
     </section>
 
-    <section class="container bg-black">
-        <!--Destacados targetas-->
-        <h1 class="text-center text-light pt-4">DESTACADOS</h1>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 py-4" id="destacados">
-            <div class="col my-4">
-                <div class="card bg-info text-light h-100">
-                    <img src="assets/img/card1.jpg" class="card-img-top" alt="Cordillera y lago" id="card-image-1">
-                    <p class="card-text mx-3 py-2 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Exercitationem quam odio nisi et repellat voluptas iusto rem, fugit perspiciatis porro dicta
-                        quos, officia id tenetur corporis, consequatur reiciendis laboriosam doloribus?</p>
-                </div>
-            </div>
-            <div class="col my-4">
-                <div class="card bg-info text-light h-100">
-                    <img src="assets/img/card2.jpg" class="card-img-top" alt="Lago y montañas" id="card-image-2">
-                    <p class="card-text mx-3 py-2 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                        suscipit quas commodi neque. Architecto sapiente vel quae a, dolore beatae eligendi
-                        necessitatibus reiciendis fugiat, accusamus repellat dolorum, quidem ipsum porro?</p>
-                </div>
-            </div>
-            <div class="col my-4">
-                <div class="card bg-info text-light h-100">
-                    <img src="assets/img/card3.jpg" class="card-img-top" alt="Pájaro en el lago" id="card-image-3">
-                    <p class="card-text mx-3 py-2 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                        suscipit quas commodi neque. Architecto sapiente vel quae a, dolore beatae eligendi
-                        necessitatibus reiciendis fugiat, accusamus repellat dolorum, quidem ipsum porro?</p>
-                </div>
-            </div>
-            <div class="col my-4">
-                <div class="card bg-info text-light h-100">
-                    <img src="assets/img/card4.jpg" class="card-img-top" alt="Bosque" id="card-image-4">
-                    <p class="card-text mx-3 py-2 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                        suscipit quas commodi neque. Architecto sapiente vel quae a, dolore beatae eligendi
-                        necessitatibus reiciendis fugiat, accusamus repellat dolorum, quidem ipsum porro?</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
-    <section class="container bg-black">
-        <!--Agregar Contacto-->
-        <div class="row" id="contacto">
-            <div class="col py-4">
-                <h1 class="text-center text-light">CONTACTO</h1>
-                <form>
-                    <div class="mb-3">
-                        <label for="nameInput" class="form-label text-light">Nombre</label>
-                        <input type="text" class="form-control" id="nameInput">
-                    </div>
-                    <div class="mb-3">
-                        <label for="subjectInput" class="form-label text-light">Asunto</label>
-                        <input type="text" class="form-control" id="subjectInput">
-                    </div>
-                    <div class="mb-3">
-                        <label for="messageText" class="form-label text-light">Mensaje</label>
-                        <textarea type="text" class="form-control" id="messageText"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-info text-light" data-bs-toggle="tooltip"
-                        data-bs-placement="top"
-                        >Enviar</button>
-                </form>
-            </div>
-        </div>
-    </section>
 
-    <footer class="container-fluid bg-info px-2 px-md-5">
+    <footer class="container-fluid">
         <!--Footer con redes sociales y logos-->
-        <div class="row text-light pt-4 pb-2 px-1 px-md-5">
-            <div class="col-6 text-start ps-2 ps-md-5">
+        <div class="row text-light ">
+            <div class="col-6 text-start">
                 <p class="footer-text">VIAJES CHILE</p>
             </div>
-            <div class="col-6 text-end mt-2 pe-2 pe-md-5">
+            <div class="col-6 text-end ">
                 <a href="https://www.github.com">
-                    <i class="fa-brands fa-square-github fa-2xl text-light"></i>
+                    <i class="fa-brands fa-square-github text-light"></i>
                 </a>
                 <a href="https://www.linkedin.com">
-                    <i class="fa-brands fa-linkedin fa-2xl ps-1 text-light"></i>
+                    <i class="fa-brands fa-linkedin text-light"></i>
                 </a>
                 <a href="https://www.twitter.com">
-                    <i class="fa-brands fa-square-twitter fa-2xl ps-1 text-light"></i>
+                    <i class="fa-brands fa-square-twitter  text-light"></i>
                 </a>
                 <a href="https://www.facebook.com">
-                    <i class="fa-brands fa-square-facebook fa-2xl ps-1 text-light"></i>
+                    <i class="fa-brands fa-square-facebook text-light"></i>
                 </a>
             </div>
         </div>
