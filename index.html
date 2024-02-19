@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gustaco Manquepillán">
+    <meta name="description" content="Catalogos de viajes Chile">
+    <meta name="keywords" content="Turismo, Viaje">
+    <title>Viajes Chile</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/viajes.svg">
+
+    <!-- Bootstrap 5.3.2-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/c8ed5828b7.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!--Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-black">
+    <!--Navbar-->
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-info px-md-5 bg-transparent">
+        <div class="container-fluid px-md-5">
+            <a class="navbar-brand nav-brand-text text-light ps-md-5" href="#">
+                <img src="assets/img/viajes.svg" alt="Logo" width="30" height="24" class="d-inline-block">
+                Viajes Chile
+            </a>
+            <div class="collapse navbar-collapse ps-3 pe-md-5" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link text-light" id="test" href="#inicio">Inicio</a>
+                    <a class="nav-link text-light" href="#quienes_somos">Quiénes Somos</a>
+                    <a class="nav-link text-light" href="#destacados">Destacados</a>
+                    <a class="nav-link text-light" href="#contacto">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container-fluid bg-black" id="inicio">
+        <!--Carrousel-->
+        <div class="row">
+            <div class="col px-0">
+                <div id="headerCarousel" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Alpacas">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="Moais">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="Pinguinos">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#headerCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container bg-black" id="quienes_somos">
+        <!--Quienes somos-->
+        <h1 class="text-center text-light pt-4">¿QUIÉNES SOMOS?</h1>
+        <div class="row row-cols-3 d-md-flex py-5">
+            <div class="col">
+                <div class="card text-light border-0 h-100">
+                    <div class="card-header bg-info text-center py-0">
+                        <i class="fa-solid fa-plane fa-lg"></i>
+                    </div>
+                    <div class="card-body bg-black">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, doloribus sequi. Facilis
+                            quisquam mollitia iure, laudantium obcaecati vel ea neque voluptas omnis molestiae nisi
+                            perferendis aliquid quae excepturi cumque nam?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-light border-0 h-100">
+                    <div class="card-body bg-black">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quod eos porro, sunt, fuga
+                            laudantium accusamus consequatur doloremque qui eveniet itaque voluptas! Est perferendis ea
+                            tempore soluta vitae, harum iusto!</p>
+                    </div>
+                    <div class="card-footer bg-info text-center py-0">
+                        <i class="fa-solid fa-mountain fa-lg"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-light border-0 h-100">
+                    <div class="card-header bg-info text-center py-0">
+                        <i class="fa-solid fa-route fa-lg"></i>
+                    </div>
+                    <div class="card-body bg-black">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure maiores facilis soluta ipsa
+                            quo harum, mollitia corporis eligendi dolore dolor, consectetur delectus aspernatur id
+                            voluptates tenetur similique porro quia commodi!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container bg-black">
+        <h1 class="text-center text-light pt-4">DESTACADOS</h1>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 py-4" id="destacados">
+            <div class="col my-4">
+                <div class="card bg-info text-light h-100">
+                    <img src="assets/img/card1.jpg" class="card-img-top" alt="Lago y montañas nevadas"
+                        id="card-image-1">
+                    <p class="card-text mx-3 py-2 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Exercitationem quam odio nisi et repellat voluptas iusto rem, fugit perspiciatis porro dicta
+                        quos, officia id tenetur corporis, consequatur reiciendis laboriosam doloribus?</p>
+                </div>
+            </div>
+            <div class="col my-4">
+                <div class="card bg-info text-light h-100">
+                    <img src="assets/img/card2.jpg" class="card-img-top" alt="Lago y montañas" id="card-image-2">
+                    <p class="card-text mx-3 py-2 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                        suscipit quas commodi neque. Architecto sapiente vel quae a, dolore beatae eligendi
+                        necessitatibus reiciendis fugiat, accusamus repellat dolorum, quidem ipsum porro?</p>
+                </div>
+            </div>
+            <div class="col my-4">
+                <div class="card bg-info text-light h-100">
+                    <img src="assets/img/card3.jpg" class="card-img-top" alt="Riko y arena" id="card-image-3">
+                    <p class="card-text mx-3 py-2 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                        suscipit quas commodi neque. Architecto sapiente vel quae a, dolore beatae eligendi
+                        necessitatibus reiciendis fugiat, accusamus repellat dolorum, quidem ipsum porro?</p>
+                </div>
+            </div>
+            <div class="col my-4">
+                <div class="card bg-info text-light h-100">
+                    <img src="assets/img/card4.jpg" class="card-img-top" alt="Bosque" id="card-image-4">
+                    <p class="card-text mx-3 py-2 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                        suscipit quas commodi neque. Architecto sapiente vel quae a, dolore beatae eligendi
+                        necessitatibus reiciendis fugiat, accusamus repellat dolorum, quidem ipsum porro?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container bg-black">
+        <div class="row" id="contacto">
+            <div class="col py-4">
+                <h1 class="text-center text-light">CONTACTO</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label text-light">Nombre</label>
+                        <input type="text" class="form-control" id="nameInput">
+                    </div>
+                    <div class="mb-3">
+                        <label for="subjectInput" class="form-label text-light">Asunto</label>
+                        <input type="text" class="form-control" id="subjectInput">
+                    </div>
+                    <div class="mb-3">
+                        <label for="messageText" class="form-label text-light">Mensaje</label>
+                        <textarea type="text" class="form-control" id="messageText"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-info text-light" data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        data-bs-title="Esta información será leido por nuestros operadores y sera respondido desde nuestro correo empresarial.">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!--JS-->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
