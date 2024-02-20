@@ -32,8 +32,9 @@
 </head>
 
 <body class="bg-black">
+
     <!--Navbar-->
-    <nav class="navbar navbar-dark navbar-expand-lg bg-info px-5 bg-transparent fixed-top">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-transparentbg-info px-5 fixed-top  ">
         <div class="container-fluid px-5">
             <a class="navbar-brand nav-brand-text text-light ps-5 fs-3" href="#">
                 <img src="assets/img/viajes.svg" alt="Logo" width="30" height="24" class="d-inline-block">
@@ -50,8 +51,8 @@
         </div>
     </nav>
 
+    <!--Carrousel slide-->
     <header class="container-fluid bg-black" id="inicio">
-        <!--Carrousel slide-->
         <div class="row">
             <div class="col">
                 <div id="Carousel" class="carousel slide">
@@ -66,13 +67,11 @@
                             <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="Pinguinos">
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#Carousel"
-                        data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#Carousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Anterior</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#Carousel"
-                        data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#Carousel" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Siguiente</span>
                     </button>
@@ -81,12 +80,12 @@
         </div>
     </header>
 
+    <!--Quienes somos-->
     <section class="container bg-black" id="quienes_somos">
-        <!--Quienes somos-->
         <h1 class="text-center text-light pt-4">¿QUIÉNES SOMOS?</h1>
         <div class="row row-cols-3 d-md-flex py-5">
             <div class="col">
-                <div class="card text-light border-0 h-100">
+                <div class="card text-light h-100">
                     <div class="card-header bg-info text-center py-0">
                         <i class="fa-solid fa-plane fa-lg"></i>
                     </div>
@@ -98,19 +97,19 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card text-light border-0 h-100">
+                <div class="card text-light h-100">
                     <div class="card-body bg-black">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quod eos porro, sunt, fuga
                             laudantium accusamus consequatur doloremque qui eveniet itaque voluptas! Est perferendis ea
                             tempore soluta vitae, harum iusto!</p>
                     </div>
-                    <div class="card-footer bg-info text-center py-0">
+                    <div class="card-footer bg-info text-center">
                         <i class="fa-solid fa-mountain fa-lg"></i>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card text-light border-0 h-100">
+                <div class="card text-light h-100">
                     <div class="card-header bg-info text-center py-0">
                         <i class="fa-solid fa-route fa-lg"></i>
                     </div>
@@ -124,27 +123,91 @@
         </div>
     </section>
 
-    
-
-
-    <footer class="container-fluid">
-        <!--Footer con redes sociales y logos-->
-        <div class="row text-light ">
-            <div class="col-6 text-start">
-                <p class="footer-text">VIAJES CHILE</p>
+    <!--Sección destacados con 4 tarjetas con imagen y texto-->
+    <section class="container bg-black" id="destacados">
+        <h1 class="text-center text-light pt-4"> DESTACADOS</h1>
+        <div class="row">
+            <div class="col my-4">
+                <div class="card bg-info text-light h-100">
+                    <img src="assets/img/card1.jpg" class="card-img-top" alt="Cordillera y lagos" id="card-image-1">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Exercitationem quam odio nisi et repellat voluptas iusto rem, fugit perspiciatis porro dicta
+                        quos, officia id tenetur corporis, consequatur reiciendis laboriosam doloribus?</p>
+                </div>
             </div>
-            <div class="col-6 text-end ">
+
+            <div class="col my-4">
+                <div class="card bg-info text-light h-100">
+                    <img src="assets/img/card2.jpg" class="card-img-top" alt="Lago y montañas" id="card-image-2">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                        suscipit quas commodi neque. Architecto sapiente vel quae a, dolore beatae eligendi
+                        necessitatibus reiciendis fugiat, accusamus repellat dolorum, quidem ipsum porro?</p>
+                </div>
+            </div>
+            <div class="col my-4">
+                <div class="card bg-info text-light h-100">
+                    <img src="assets/img/card3.jpg" class="card-img-top" alt="Pájaro en el lago" id="card-image-3">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                        suscipit quas commodi neque. Architecto sapiente vel quae a, dolore beatae eligendi
+                        necessitatibus reiciendis fugiat, accusamus repellat dolorum, quidem ipsum porro?</p>
+                </div>
+            </div>
+            <div class="col my-4">
+                <div class="card bg-info text-light h-100">
+                    <img src="assets/img/card4.jpg" class="card-img-top" alt="Bosque" id="card-image-4">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                        suscipit quas commodi neque. Architecto sapiente vel quae a, dolore beatae eligendi
+                        necessitatibus reiciendis fugiat, accusamus repellat dolorum, quidem ipsum porro?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container bg-black">
+        <div class="row" id="contacto">
+            <div class="col">
+                <h1 class="text-center text-light">CONTACTO</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label text-light">Nombre</label>
+                        <input type="text" class="form-control" id="nameInput">
+                    </div>
+                    <div class="mb-3">
+                        <label for="subjectInput" class="form-label text-light">Asunto</label>
+                        <input type="text" class="form-control" id="subjectInput">
+                    </div>
+                    <div class="mb-3">
+                        <label for="messageText" class="form-label text-light">Mensaje</label>
+                        <textarea type="text" class="form-control" id="messageText"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-info text-light" data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        data-bs-title="Se enviará la información a tu correo electrónico">Enviar</button>
+
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer con redes sociales y logos-->
+    <footer class="container-fluid bg-info px-2 px-md-5">
+        <div class="row text-light pt-4 pb-2 px-1 px-md-5">
+            <div class="col-6 text-start ps-2 ps-md-5">
+                <p class="footer-text fs-3">VIAJES CHILE</p>
+            </div>
+            <div class="col-6 text-end  mt-2 pe-2 pe-md-5 ">
                 <a href="https://www.github.com">
-                    <i class="fa-brands fa-square-github text-light"></i>
+                    <i class="fa-brands fa-square-github fa-2xl ps-1 text-light"></i>
                 </a>
                 <a href="https://www.linkedin.com">
-                    <i class="fa-brands fa-linkedin text-light"></i>
+                    <i class="fa-brands fa-linkedin fa-2xl ps-1 text-light"></i>
                 </a>
                 <a href="https://www.twitter.com">
-                    <i class="fa-brands fa-square-twitter  text-light"></i>
+                    <i class="fa-brands fa-square-twitter fa-2xl ps-1 text-light"></i>
                 </a>
                 <a href="https://www.facebook.com">
-                    <i class="fa-brands fa-square-facebook text-light"></i>
+                    <i class="fa-brands fa-square-facebook fa-2xl ps-1 text-light"></i>
                 </a>
             </div>
         </div>
@@ -152,6 +215,8 @@
 
     <!--JS-->
     <script src="assets/js/script.js"></script>
+    
+
 
 </body>
 
