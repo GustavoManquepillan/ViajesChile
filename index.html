@@ -34,11 +34,13 @@
 <body class="bg-black">
 
     <!--Navbar-->
-    <nav class="navbar navbar-dark navbar-expand-lg bg-transparentbg-info px-5 fixed-top  ">
-        <div class="container-fluid px-5">
-            <a class="navbar-brand nav-brand-text text-light ps-5 fs-3" href="#">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-transparent fixed-top px-md-5 ">
+        <div class="container-fluid">
+
+
+            <a class="navbar-brand nav-brand-text text-light fs-3" href="#">
                 <img src="assets/img/viajes.svg" alt="Logo" width="30" height="24" class="d-inline-block">
-                Viajes Chile
+                <button class="border-0 bg-transparent text-light" onclick="mostrarAlerta()">Viajes Chile</button>
             </a>
             <div class="collapse navbar-collapse ps-5 pe-5" id="navbarNav">
                 <div class="navbar-nav ms-auto">
@@ -51,7 +53,7 @@
         </div>
     </nav>
 
-    <!--Carrousel slide-->
+    <!--Carrousel slide con imágenes de paisajes-->
     <header class="container-fluid bg-black" id="inicio">
         <div class="row">
             <div class="col">
@@ -80,13 +82,13 @@
         </div>
     </header>
 
-    <!--Quienes somos-->
+    <!--Sección de información, dispuestas en tarjetas-->
     <section class="container bg-black" id="quienes_somos">
         <h1 class="text-center text-light pt-4">¿QUIÉNES SOMOS?</h1>
         <div class="row row-cols-3 d-md-flex py-5">
             <div class="col">
                 <div class="card text-light h-100">
-                    <div class="card-header bg-info text-center py-0">
+                    <div class="card-header bg-info text-center">
                         <i class="fa-solid fa-plane fa-lg"></i>
                     </div>
                     <div class="card-body bg-black">
@@ -110,7 +112,7 @@
             </div>
             <div class="col">
                 <div class="card text-light h-100">
-                    <div class="card-header bg-info text-center py-0">
+                    <div class="card-header bg-info text-center">
                         <i class="fa-solid fa-route fa-lg"></i>
                     </div>
                     <div class="card-body bg-black">
@@ -162,7 +164,7 @@
             </div>
         </div>
     </section>
-
+    <!--Sección de contacto y formulario-->
     <section class="container bg-black">
         <div class="row" id="contacto">
             <div class="col">
@@ -178,11 +180,13 @@
                     </div>
                     <div class="mb-3">
                         <label for="messageText" class="form-label text-light">Mensaje</label>
-                        <textarea type="text" class="form-control" id="messageText"></textarea>
+                        <textarea type="text" class="form-control" rows="6" id="messageText"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-info text-light" data-bs-toggle="tooltip"
+                    <button type="submit" class="btn btn-info text-light " data-bs-toggle="tooltip"
                         data-bs-placement="top"
                         data-bs-title="Se enviará la información a tu correo electrónico">Enviar</button>
+
+
 
 
                 </form>
@@ -191,31 +195,38 @@
     </section>
 
     <!--Footer con redes sociales y logos-->
-    <footer class="container-fluid bg-info px-2 px-md-5">
-        <div class="row text-light pt-4 pb-2 px-1 px-md-5">
-            <div class="col-6 text-start ps-2 ps-md-5">
-                <p class="footer-text fs-3">VIAJES CHILE</p>
+    <footer class="container-fluid bg-info">
+        <div class="row text-light" id="caja-footer">
+            <div class="col-6 text-start">
+                <p class="footer-text fs-2">VIAJES CHILE</p>
             </div>
-            <div class="col-6 text-end  mt-2 pe-2 pe-md-5 ">
+            <div class="col-6 text-end">
                 <a href="https://www.github.com">
-                    <i class="fa-brands fa-square-github fa-2xl ps-1 text-light"></i>
+                    <i class="fa-brands fa-square-github fa-2xl text-light"></i>
                 </a>
                 <a href="https://www.linkedin.com">
-                    <i class="fa-brands fa-linkedin fa-2xl ps-1 text-light"></i>
+                    <i class="fa-brands fa-linkedin fa-2xl text-light"></i>
                 </a>
                 <a href="https://www.twitter.com">
-                    <i class="fa-brands fa-square-twitter fa-2xl ps-1 text-light"></i>
+                    <i class="fa-brands fa-square-twitter fa-2xl text-light"></i>
                 </a>
                 <a href="https://www.facebook.com">
-                    <i class="fa-brands fa-square-facebook fa-2xl ps-1 text-light"></i>
+                    <i class="fa-brands fa-square-facebook fa-2xl text-light"></i>
                 </a>
             </div>
         </div>
     </footer>
 
+    <script>
+        // Función para mostrar la alerta
+        function mostrarAlerta() {
+            alert('Esta página es un desafío evaluado realizado por un alumno.');
+        }
+    </script>
+
     <!--JS-->
     <script src="assets/js/script.js"></script>
-    
+
 
 
 </body>

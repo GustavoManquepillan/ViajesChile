@@ -7,7 +7,7 @@ body {
     font-style: normal;
 }
 
-.text-footer {
+.footer-text {
     font-family: "Bebas Neue", sans-serif;
     font-style: normal;
   }
@@ -27,3 +27,11 @@ body {
     --bs-tooltip-bg: var(--bd-violet-bg);
     --bs-tooltip-color: var(--bs-white);
   }
+
+  #caja-footer
+  {
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 40px;
+  }
+  
